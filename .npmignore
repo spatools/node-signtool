@@ -1,0 +1,47 @@
+# Visual Studio User-specific files
+*.suo
+*.user
+*.sln.docstates
+*.*proj
+*.sln
+.vs/
+
+# Build results
+[T|t]emp/
+[D|d]ist/
+[B|b]in/
+[O|o]bj/
+[T|t]est[R|r]esults/
+.tscache/
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.dat
+*.tmp
+
+# Development files
+*.js.map
+*.ts
+!*.d.ts
+
+# Dependencies
+typings.json
+typings/
+
+# Logs
+*.log
+
+# Build configuration
+tsconfig.json
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/

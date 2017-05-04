@@ -1,0 +1,35 @@
+{
+  "name": "signtool",
+  "version": "1.0.0",
+  "description": "Node module wrapper around the signtool binary",
+  "homepage": "https://github.com/spatools/node-signtool#readme",
+  "author": "SPA Tools (spa@touchify.co)",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spatools/node-signtool.git"
+  },
+  "bugs": {
+    "url": "https://github.com/spatools/node-signtool/issues"
+  },
+  "keywords": [
+    "compiler",
+    "signer",
+    "sign",
+    "signtool",
+    "ms",
+    "sdk",
+    "msi",
+    "exe",
+    "code",
+    "signing"
+  ],
+  "devDependencies": {
+    "typescript": "^2.3.2"
+  }
+}
