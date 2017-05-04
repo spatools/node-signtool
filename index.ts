@@ -448,9 +448,15 @@ function run(args: string[], options: RunOptions = {}): Promise<RunResult> {
             }
 
             const err = new Error(`SignTool ${args[0]} command exited with code ${code}`) as any;
+            err.command = cmd;
+            err.args = args;
             err.code = code;
             err.stdout = Buffer.concat(stdout).toString();
             err.stderr = Buffer.concat(stderr).toString();
+            
+            if (err.stderr) {
+                err.message = err.message + "\n" + err.stderr;
+            }
 
             reject(err);
         });
@@ -458,7 +464,7 @@ function run(args: string[], options: RunOptions = {}): Promise<RunResult> {
 }
 
 function undef(val: any): val is undefined {
-    return typeof val !== "undefined";
+    return typeof val === "undefined";
 }
 
 function signtool(): string {
